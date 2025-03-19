@@ -10,8 +10,9 @@ function Exemplo02 () {
             <Text style={styles.titulo}>Exemplo - 02</Text>
             <Image source={img} style={styles.img}/>
             
-            <Mensagem titulo={'ERRO'}>VocÊ não clicou corretamente</Mensagem>
-            <Mensagem titulo={'SUCESSO'}>Acessi permitido</Mensagem>
+            <Mensagem titulo={'ERRO'} mensagem={'você não clicou corretamente'}/>
+            <Mensagem titulo={'SUCESSO'} mensagem={'você clicou corretamente'}/>
+            <Mensagem titulo={'AVISO'} mensagem={'o tempo acabou'}/>
         
         </View>
     )
