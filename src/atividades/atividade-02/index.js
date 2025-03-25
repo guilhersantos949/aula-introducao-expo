@@ -14,11 +14,10 @@ import img6 from '../../../assets/img-06.jpg'
 function Atividade02 () {
     return(
         <View style={styles.container}>
-            <Text style={styles.titulo}>Atividade-02</Text>
-        </View>,
-
-        <View style={styles.container}>
-
+            <Text style={styles.titulo}>Atividade 02</Text>
+            
+        
+        
         </View>
     )
     
