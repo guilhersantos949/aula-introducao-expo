@@ -4,7 +4,7 @@ import img from '../../../assets/002-1-react-native.png'
 import Mensagem from './mensagem';
 
 
-function Exemplo02 () {
+function Atividade02 () {
     return(
         <View style={styles.container}>
             <Text style={styles.titulo}>Exemplo - 02</Text>
@@ -18,4 +18,4 @@ function Exemplo02 () {
     )
     
 }
-    export default Exemplo02;
+    export default Atividade02;
