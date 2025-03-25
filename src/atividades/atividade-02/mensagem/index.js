@@ -1,6 +1,6 @@
 import { View,Text } from 'react-native';
 import styles from './styles';
-import { Children } from 'react';
+
 
 function Mensagem (props) {
     return(

@@ -1,21 +1,31 @@
-import { View,Text, Image } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import styles from './styles';
-import img from '../../../assets/002-1-react-native.png'
+import img from '../../../assets/img-01.jpg';
 import Mensagem from './mensagem';
 
 
-function Atividade02 () {
-    return(
+function Atividade02() {
+    return (
         <View style={styles.container}>
             <Text style={styles.titulo}>Exemplo - 02</Text>
-            <Image source={img} style={styles.img}/>
-            
-            <Mensagem titulo={'ERRO'} mensagem={'você não clicou corretamente'}/>
-            <Mensagem titulo={'SUCESSO'} mensagem={'você clicou corretamente'}/>
-            <Mensagem titulo={'AVISO'} mensagem={'o tempo acabou'}/>
-        
+
+
+            <Mensagem
+                titulo={'ERRO'}
+                mensagem={'você não clicou corretamente'}
+                Imagem={img}
+            />
+            <Mensagem
+                titulo={'SUCESSO'}
+                mensagem={'você clicou corretamente'}
+            />
+            <Mensagem
+                titulo={'AVISO'}
+                mensagem={'o tempo acabou'}
+            />
+
         </View>
     )
-    
+
 }
-    export default Atividade02;
+export default Atividade02;
