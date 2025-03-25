@@ -1,25 +1,21 @@
 import { View,Text, Image } from 'react-native';
 import styles from './styles';
-import Card from './card';
-import img1 from '../../../assets/img-01.jpg'
-import img2 from '../../../assets/img-02.jpg'
-import img3 from '../../../assets/img-03.jpg'
-import img4 from '../../../assets/img-04.jpg'
-import img5 from '../../../assets/img-05.jpg'
-import img6 from '../../../assets/img-06.jpg'
+import img from '../../../assets/002-1-react-native.png'
+import Mensagem from './mensagem';
 
 
-
-
-function Atividade02 () {
+function Exemplo02 () {
     return(
         <View style={styles.container}>
-            <Text style={styles.titulo}>Atividade 02</Text>
+            <Text style={styles.titulo}>Exemplo - 02</Text>
+            <Image source={img} style={styles.img}/>
             
-        
+            <Mensagem titulo={'ERRO'} mensagem={'você não clicou corretamente'}/>
+            <Mensagem titulo={'SUCESSO'} mensagem={'você clicou corretamente'}/>
+            <Mensagem titulo={'AVISO'} mensagem={'o tempo acabou'}/>
         
         </View>
     )
     
 }
-    export default Atividade02;
+    export default Exemplo02;

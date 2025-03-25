@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { RFPercentage } from "react-native-responsive-fontsize";
+import Card from "../../../atividades/atividade-02/card";
 
 const styles = StyleSheet.create({
     container:{
@@ -23,6 +24,9 @@ const styles = StyleSheet.create({
     texto:{
         fontSize: RFPercentage(2.2),
         color: 'white',
+    },
+    Card:{
+
     },
 });
     export default styles;
