@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
         flex: 1, 
         alignItems: 'center', 
         borderRadius: 20,
+        backgroundColor: 'lightgray',
     }, 
     titulo: {
         fontSize: RFPercentage(3), 
@@ -24,6 +25,7 @@ const styles = StyleSheet.create({
         textAlign: 'center', 
         textAlignVertical: 'center', 
         borderRadius: 20,
+        backgroundColor: 'white',
     }, 
 });
     export default styles;
