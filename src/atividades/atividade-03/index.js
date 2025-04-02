@@ -1,7 +1,7 @@
 import { View,Text, Button, Alert, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
-function Exemplo03 () {
+function Atividade03 () {
 
     function handleExibeMensagem () {
         Alert.alert('Teste')
@@ -30,13 +30,17 @@ function Exemplo03 () {
             />
         </View>
 
+        <View>
         <Text>
-            <TouchableOpacity>
-                <Text>Helloy-Word</Text>
+
+            <TouchableOpacity style={styles.butaoTransparencia}>
+                <Text style={styles.textoButao}>Adicionar +1</Text>
             </TouchableOpacity>
         </Text>
+        </View>
         </View>
     )
     
 }
-    export default Exemplo03;
+    export default Atividade03
+;

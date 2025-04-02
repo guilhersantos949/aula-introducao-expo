@@ -30,5 +30,19 @@ const styles = StyleSheet.create({
         width: '100%',
         margin: RFPercentage(1),
     },
+    butaoTransparencia:{
+        backgroundColor: 'deepskyblue',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 10,
+        color: 'white',
+        width: '70%',
+        height: 50,
+        
+    },
+    textoButao:{
+        color: 'white',
+        fontSize: RFPercentage(2),
+    },
 });
     export default styles;
