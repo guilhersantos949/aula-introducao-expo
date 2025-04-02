@@ -26,8 +26,5 @@ const styles = StyleSheet.create({
         fontSize: RFPercentage(2.2),
         color: 'deepskyblue',
     },
-    Button:{
-        padding: '8',
-    }
 });
     export default styles;
