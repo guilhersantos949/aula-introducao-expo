@@ -12,4 +12,3 @@ function Atividade1 () {
     
 }
     export default Atividade1
-;

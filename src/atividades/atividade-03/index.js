@@ -1,46 +1,54 @@
+import { useState } from 'react';
 import { View,Text, Button, Alert, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
 function Atividade03 () {
 
-    function handleExibeMensagem () {
-        Alert.alert('Teste')
+    const [num, setNum] = useState(0);
+
+    function handleAtualizaState () {
+        setNum(num + 1);
+    }
+    function handleAtualizaState1 () {
+        setNum(num - 1);
+    }
+    function handleAtualizaState2 () {
+        setNum(0);
     }
 
     const handleOutroJeitoFuncao = () => {
         Alert.alert('Título', 'Texto mensagem', [
             {
-              text: 'Meu texto',
-              onPress: () => Alert.alert('Tchau'),
-              style: 'default',
+                text: 'Meu texto',
+                onPress: () => Alert.alert('Tchau'),
+                style: 'default',
             },
-          ])
+        ])
     }
 
-    return(
+    return (
         <View style={styles.container}>
             <Text style={styles.titulo}>Exemplo 3</Text>
-            <Text style={styles.texto}>Variáveis js state</Text>
-        <View style={styles.butaoAlerta}>
-            <Button 
-            onPress={handleExibeMensagem}
-            title="Learn More"
-            color="deepskyblue"
-            accessibilityLabel="Learn more about this purple button"
-            />
-        </View>
 
-        <View>
-        <Text>
-
-            <TouchableOpacity style={styles.butaoTransparencia}>
-                <Text style={styles.textoButao}>Adicionar +1</Text>
+            
+            <View style={styles.grupo}> 
+            <TouchableOpacity style={styles.add} onPress={handleAtualizaState}>
+                <Text style={styles.txtBotao}>Adicionar 1</Text>
             </TouchableOpacity>
-        </Text>
+
+            <Text style={styles.numero}>{num}</Text> 
+
+            <TouchableOpacity style={styles.sub} onPress={handleAtualizaState1}>
+                <Text style={styles.txtBotao}>diminuit 1</Text>
+            </TouchableOpacity>
+            </View>
+
+            <View style={styles.botao}>
+            <TouchableOpacity onPress={handleAtualizaState2}>
+                <Text style={styles.txtBotao}>voltar a 0</Text>
+            </TouchableOpacity>
+            </View>
         </View>
-        </View>
-    )
-    
+    );
 }
-    export default Atividade03
-;
+    export default Atividade03;

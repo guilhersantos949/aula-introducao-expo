@@ -8,7 +8,7 @@ import Exemplo01 from './src/exemplos/ex-01';
 import Exemplo02 from './src/exemplos/ex-02';
 import Exemplo03 from './src/exemplos/ex-03';
 
-import Atividade1 from './src/atividades/atividade1';
+import Atividade01 from './src/atividades/atividade-01';
 import Atividade02 from './src/atividades/atividade-02';
 import Atividade03 from './src/atividades/atividade-03';
 
