@@ -6,39 +6,38 @@ import styles from './styles';
 
 
 
-function Atividade04(){
+function Exemplo4(){
 
-        
     const [txtInserido, setTxtInserido] = useState('');
+    const [txtInserido2, setTxtInserido2] = useState('');
     const [txtExibir, setTxtExibir] = useState('');
-    const [txtExibir1, setTxtExibir1] = useState('');
-    function mostrarTexto(){
-        setTxtExibir(setTxtExibir);
-        setTxtExibir1(setTxtExibir1);
-    }
-    function mostrartexto1(){
-        setTxtExibir1(txtExibir);
-        setTxtExibir(txtExibir1)
-    }
+    
 
     return(
         <View style={styles.container}>
             <Text style={styles.título}>Exemplo 4</Text>
-            <Text style={styles.texto}>{txtInserido}</Text>
-            <Text>Nome</Text>
+            <Text style={styles.texto}>{txtInserido +' ' +txtInserido2}</Text>
             <TextInput
              style={styles.input}
-             onChangeText={(valor) => setTxtInserido(valor)}/>
-             <Text>Sobrenome</Text>
+             onChangeText={(valor) => setTxtInserido(valor)}
+             value={txtInserido}/>
              <TextInput
              style={styles.input}
-             onChangeText={(valor) => setTxtInserido(valor)}/>
+             onChangeText={(valor) => setTxtInserido2(valor)}
+             value={txtInserido2}
+             />
             
             <Text style={styles.titulo}>
                 Exemplo envio dados click do botão
             </Text>
-            <Text styles={styles.texto}>{mostrartexto1}</Text>
-            <TouchableOpacity style={styles.botao} onPress={() => setTxtExibir(txtInserido)}>
+            <Text styles={styles.texto}>{txtExibir}</Text>
+            <TouchableOpacity style={styles.botao} onPress={() => 
+            {
+                setTxtExibir(txtInserido +' '+ txtInserido2);
+                setTxtInserido('');
+                setTxtInserido2('');
+            }
+                }>
                 <Text style={styles.txtBotao}>
                     Exibir texto digitado
                 </Text>
@@ -48,4 +47,4 @@ function Atividade04(){
 
 }
 
-export default Atividade04;
+export default Exemplo4;
