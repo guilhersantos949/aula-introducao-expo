@@ -7,9 +7,31 @@ function Atividade05() {
     const [num2, setNum2] = useState(0);
     const [total, setTotal] = useState(0);
 
-    const calcular = () => {
+    const Somar = () => {
         setTotal(parseFloat(num1) + parseFloat(num2));
+        setNum1(0);
+        setNum2(0);
     };
+    const Subtrair = () => {
+        setTotal(parseFloat(num1) - parseFloat(num2));
+        setNum1(0);
+        setNum2(0);
+    }
+    const Multiplicar = () => {
+        setTotal(parseFloat(num1) * parseFloat(num2));
+        setNum1(0);
+        setNum2(0);
+    }
+    const Dividir = () => {
+        setTotal(parseFloat(num1) / parseFloat(num2));
+        setNum1(0);
+        setNum2(0);
+    }
+    const Limpar = () => {
+        setNum1(0);
+        setNum2(0);
+        setTotal(0);
+    }
 
     return (
         <View style={styles.container}>
@@ -20,7 +42,7 @@ function Atividade05() {
             <TextInput
                 style={styles.txtEntrada}
                 keyboardType="numeric"
-                value={String(num1)}
+                value={num1.toString()}
                 onChangeText={(valor) => setNum1(valor)}
             />
 
@@ -30,17 +52,32 @@ function Atividade05() {
             <TextInput
                 style={styles.txtEntrada}
                 keyboardType="numeric"
-                value={String(num2)}
+                value={num2.toString()}
                 onChangeText={(valor) => setNum2(valor)}
             />
 
             <Text style={styles.txtSaida}>=</Text>
 
             <Text style={styles.txtLabel}>Resultado</Text>
-            <Text style={styles.txtSaida}>{total}</Text>
+            <TextInput
+                style={styles.txtSaida}
+                editable={false}
+                value={total.toString()}></TextInput>
 
-            <TouchableOpacity style={styles.btnCalcular} onPress={calcular}>
-                <Text style={styles.txtBotao}>Calcular</Text>
+            <TouchableOpacity style={styles.btnCalcular} onPress={Somar}> 
+                <Text style={styles.txtBotao}>+</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.btnSubtrair} onPress={Subtrair}>
+                <Text style={styles.txtBotao}>-</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.btnCalcular} onPress={Multiplicar}>
+                <Text style={styles.txtBotao}>*</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.btnCalcular} onPress={Dividir}>
+                <Text style={styles.txtBotao}>/</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.btnLimpar} onPress={Limpar}>
+                <Text style={styles.txtBotao}>limpar</Text>
             </TouchableOpacity>
         </View>
     );
