@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 
 import Constants from 'expo-constants';
+import Exemplos from './src/exemplos';
 import Exemplo01 from './src/exemplos/ex-01';
 import Exemplo02 from './src/exemplos/ex-02';
 import Exemplo03 from './src/exemplos/ex-03';
@@ -23,7 +24,7 @@ import Atividade08 from './src/atividades/atividade-08';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Atividade08/>
+      <Exemplos/>
       <StatusBar style="light" />
     </View>
   );
