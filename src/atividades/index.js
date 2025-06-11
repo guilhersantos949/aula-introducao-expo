@@ -1,34 +1,34 @@
 import { View, TouchableOpacity, Text } from "react-native";
 import styles from "./styles";
 
-export default function Exemplos() {
+export default function Atividades() {
     return (
         <View style={styles.containter}>
-            <Text style={styles.titulo}>Exemplos</Text>
+            <Text style={styles.titulo}>Atividades</Text>
 
             <TouchableOpacity style={styles.botao}>
-                <Text>Exemplo 1</Text>
+                <Text>Atividade 1</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.botao}>
-                <Text>Exemplo 2</Text>
+                <Text>Atividade 2</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.botao}>
-                <Text>Exemplo 3</Text>
+                <Text>Atividade 3</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.botao}>
-                <Text>Exemplo 4</Text>
+                <Text>Atividade 4</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.botao}>
-                <Text>Exemplo 5</Text>
+                <Text>Atividade 5</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.botao}>
-                <Text>Exemplo 6</Text>
+                <Text>Atividade 6</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.botao}>
-                <Text>Exemplo 7</Text>
+                <Text>Atividade 7</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.botao}>
-                <Text>Exemplo 8</Text>
+                <Text>Atividade 8</Text>
             </TouchableOpacity>
         </View>
     )
